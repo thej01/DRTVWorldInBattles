@@ -1,0 +1,5 @@
+# Ignore shortcuts
+*.lnk
+
+# Ignore gamemaker data files
+*.win
