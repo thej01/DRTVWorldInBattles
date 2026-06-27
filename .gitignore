@@ -3,3 +3,6 @@
 
 # Ignore gamemaker data files
 *.win
+
+# UTMT Project backups (data files...)
+**/.modbackup/
