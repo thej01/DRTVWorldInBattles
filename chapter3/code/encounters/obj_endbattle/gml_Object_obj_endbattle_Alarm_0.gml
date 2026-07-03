@@ -37,6 +37,6 @@ if (global.flag[9] == 1)
     snd_volume(global.currentsong[1], 1, 20);
 }
 
-global.flag[9] = 1
+scr_musicmod_enable_batmusic();
 
 instance_destroy();

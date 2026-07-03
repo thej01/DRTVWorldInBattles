@@ -1,7 +1,7 @@
 function scr_musicmod_init()
 {
-    global.mus_mod_version = 4
-    global.mus_mod_version_string = "v4"
+    global.mus_mod_version = 5
+    global.mus_mod_version_string = "v5"
     global.tvworld_mus_persist = true
 
     // dont continue music if encounter index is any of these
@@ -108,7 +108,6 @@ function scr_array_contains(arr, find)
 
 function scr_musicmod_on_battle()
 {
-
     if scr_array_contains(global.mus_mod_ignore_rooms, room)
         return;
 
@@ -120,11 +119,4 @@ function scr_musicmod_on_battle()
         if (scr_musicmod_current_song_name() == "tv_world.ogg")
             scr_musicmod_disable_batmusic()
     }
-}
-
-function scr_musicmod_on_save()
-{
-    // this really isnt something that should be saved...
-    if (global.chapter == 3)
-        global.flag[9] = 1
 }
